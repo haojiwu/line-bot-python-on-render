@@ -17,3 +17,6 @@ Make sure you have the following:
 5. Once the bot servcie is live, find the service `onrender` URL (e.g., `https://line-bot-python-<something unique>.onrender.com`) on the Dashboard. Append `/callback` to the service URL to build the webhook URL (e.g., `https://line-bot-python-<something unique>.onrender.com/callback`). Paste the webhook URL to the `Webhook settings` section on the LINE channel's `Messaging API` tab on the [LINE Developers Console](https://developers.line.biz/console/). Also enable `Use webhook` on the same section.
 6. Add the LINE Official Account associated with your bot as a friend on LINE by scanning the QR code on the `Messaging API` tab of your channel settings on the [LINE Developers Console](https://developers.line.biz/console/).
 7. That's it. Send your LINE Official Account a text message on LINE and confirm that it responds with the same message.
+
+## Notes
+- If your LINE bot app files are in the same repo as `render.yaml`, you don't need to specify `repo` in the `render.yaml`. You can find more information in the [Render Blueprint spec](https://render.com/docs/blueprint-spec#repo--branch).
