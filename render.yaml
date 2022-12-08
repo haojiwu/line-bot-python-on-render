@@ -2,15 +2,15 @@ services:
 - type: web
   name: line-bot-python-flask
   env: python
-  repo: https://github.com/line/line-bot-sdk-python.git
+  repo: https://github.com/bill8345/line-bot/tree/main.git
   buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
   startCommand: cd examples/flask-echo;gunicorn app:app
   plan: free
   autoDeploy: false
   envVars:
-  - key: LINE_CHANNEL_ACCESS_TOKEN
+  - key: fuuoYf9qSR4/IZRBtOlzzoeM0wIFjpj+M/DTxRRcAkCyzGgvXvjyBCAQiCa6qNt3R9IE6FIeoA+1WL1EoNsXq5/+UUuYFKQUJUxoZ82+mD15p55NMc2ry76U9rjyqWw9SC58ja2/TtxCdTV3+pb4DwdB04t89/1O/w1cDnyilFU=
     sync: false
-  - key: LINE_CHANNEL_SECRET
+  - key: 57909b02f6af9b63af74b5ee32c43d08
     sync: false
 # - type: web
 #   name: line-bot-python-flask-with-handler
