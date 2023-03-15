@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: line-bot-eat_what
+  name: line-bot-eat-what
   env: python
   repo: https://github.com/paulchi-intel/line-bot-sdk-python/compare/master...paulchi-intel-patch-1.git
   buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
