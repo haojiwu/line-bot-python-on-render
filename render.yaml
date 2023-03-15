@@ -1,16 +1,16 @@
 services:
 - type: web
-  name: line-bot-python-flask
+  name: line-bot-eat_what
   env: python
-  repo: https://github.com/line/line-bot-sdk-python.git
+  repo: https://github.com/paulchi-intel/line-bot-sdk-python/compare/master...paulchi-intel-patch-1.git
   buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
   startCommand: cd examples/flask-echo;gunicorn app:app
   plan: free
   autoDeploy: false
   envVars:
-  - key: LINE_CHANNEL_ACCESS_TOKEN
+  - key: 259KhHhK9JkcNBApp5AN49wK2f4mjHOSonztVEOlZ4qExdCwZrEhXJxvYjiee0T+adOuVDseVzZesGdKSopsxraMRjmY47XLaX0booeyplmG7WHgJ4zr8PE0/72Bq5GLWim3Nop+yAMKPAWVVO2IYgdB04t89/1O/w1cDnyilFU=
     sync: false
-  - key: LINE_CHANNEL_SECRET
+  - key: ccd99ccd0896fd6354b57eec2dad677f
     sync: false
 # - type: web
 #   name: line-bot-python-flask-with-handler
